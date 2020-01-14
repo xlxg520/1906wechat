@@ -8,6 +8,6 @@ class WeixinController extends Controller
 {
     public function index()
     {
-        echo 34123123123;
+        echo 3123123;
     }
 }
