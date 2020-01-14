@@ -17,4 +17,5 @@ Route::get('/', function () {
 
 
 
+//Route::any("wechat/index","WeixinController@index");
 Route::any("wechat/index","WeixinController@index");
