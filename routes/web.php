@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::any("wechat/index","WeixinController@index");
 Route::any("wechat/Token","TextController@getAccessToken");
+Route::any("wechat/info","TextController@getUserInfo");

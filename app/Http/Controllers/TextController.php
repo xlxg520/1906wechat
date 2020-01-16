@@ -31,5 +31,16 @@ class TextController extends Controller
 
 
 
+   // 获取用户信息
+    public function getUserInfo()
+    {
+        $access_token = $this->getAccessToken();
+        $openid  = 'opvtsw9wwRs4RqC-bFUBj2jwMtas';
+
+        $url = 'https://api.weixin.qq.com/cgi-bin/user/info?access_token='.$access_token.'&openid='.$openid.'&lang=zh_CN';
+        $json = file_get_contents($url);
+        $arr  =  json_decode($json,true);
+        echo '<pre>';print_r($arr);echo '</pre>';
+    }
 
 }
